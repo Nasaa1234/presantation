@@ -1,9 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-
     <title>Sri Lanka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script defer src="/__/firebase/9.20.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.20.0/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/9.20.0/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.20.0/firebase-performance-compat.js"
+    ></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <meta charset="utf-8" />
 
     <meta
       name="description"
@@ -19,26 +53,23 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
   </head>
-
   <body>
+    <p id="load">Firebase SDK Loading&hellip;</p>
     <div class="reveal">
       <div class="slides">
-        <section data-transition="convex">
-          <section data-transition="convex" data-auto-animate>
-            <h1>Шри Ланка</h1>
-          </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Шри Ланка</h1>
-            <img src="./SriLanka/Flag.png" />
-          </section>
+        <section>
+          <img src="../SriLanka/Flag.png" />
+          <h1>Шри Ланка</h1>
         </section>
         <section data-transition="convex">
-          <section data-transition="convex" data-transition="convex">
+          <!-- <h2>Сайн байцгаана уу?</h2> -->
+          <section data-transition="convex">
+            <img src="../SriLanka/animal1.jpeg" width="45%" />
             <p>
               Шри Ланка бол Энэтхэгийн далайд оршдог Өмнөд Азид орших арлын улс
               юм. Энэ улс соёлын баялаг өв, олон янзын зэрлэг ан амьтад,
@@ -47,9 +78,6 @@
             </p>
           </section>
           <section data-transition="convex">
-            <img src="./SriLanka/animal1.jpeg" />
-          </section>
-          <section data-transition="convex" data-transition="convex">
             <p>
               Энэхүү танилцуулгад бид Шри Ланкийн байршил, улс төр, эдийн засаг,
               хэл, соёл, ДНБ, тээвэр, мөнгөн тэмдэгт, боловсрол, эрчим хүч, уур
@@ -57,32 +85,27 @@
               дүгнэлт зэрэг зарим гол талуудыг судлах болно.
             </p>
           </section>
-          <section data-transition="convex" data-transition="convex">
-            <img src="./SriLanka/detail.cms" />
+          <section data-transition="convex">
+            <img src="../SriLanka/detail.cms" />
           </section>
-          <section data-transition="convex" data-transition="convex">
+          <section data-transition="convex">
             <h3>Заа ингээд илүү дэлгэрэнгүйг мэдэж авцгая!</h3>
           </section>
         </section>
-        <section data-transition="convex">
-          <section
-            data-transition="convex"
-            data-auto-animate
-            data-transition="convex"
-          >
+        <section data-transition="concave">
+          <section>
             <h1>Байршил</h1>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Байршил</h1>
-            <img src="./SriLanka/location1.jpeg" width="70%" />
+          <section>
+            <img src="../SriLanka/location1.jpeg" width="100%" />
           </section>
-          <section data-transition="convex">
+          <section>
             Энэ зургийг хараад хаана байрлаж байгааг нь таамаглаарай?
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/location3.jpeg" />
+          <section>
+            <img src="../SriLanka/location3.jpeg" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланка бол өмнөд талаараа Энэтхэгийн далай, зүүн хойд талаараа
             Бенгалын булан, баруун хойд талаараа Палкийн хоолой, Маннарын
             булангаар хүрээлэгдсэн Өмнөд Азид орших арлын орон юм. Энэ нь 5° ба
@@ -90,67 +113,52 @@
             Энэтхэгийн хойгоос Маннарын булан болон Палкийн хоолойгоор
             тусгаарлагддаг.
           </section>
-          <section data-transition="convex" data-auto-animate>
+          <section>
             <p>
               Тус арал нь ойролцоогоор 65,610 хавтгай дөрвөлжин километр
               талбайтай бөгөөд Азийн 25 дахь том улс юм. Шри Ланкийн нийслэл нь
               арлын баруун эрэгт байрладаг Коломбо хот юм.
             </p>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <p>
-              Тус арал нь ойролцоогоор 65,610 хавтгай дөрвөлжин километр
-              талбайтай бөгөөд Азийн 25 дахь том улс юм. Шри Ланкийн нийслэл нь
-              арлын баруун эрэгт байрладаг Коломбо хот юм.
-            </p>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-              "
-            >
-              <img src="./SriLanka/capital.jpeg" width="70%" />
-              Коломбо хот
-            </div>
+          <section>
+            <img src="../SriLanka/capital.jpeg" width="100%" />
+            Коломбо хот
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex" data-auto-animate>
+        <section data-transition="concave">
+          <section>
             <h1>Улс төр</h1>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Улс төр</h1>
-
-            <img src="./SriLanka/logo.png" width="30%" />
+          <section>
+            <img src="../SriLanka/logo.png" width="40%" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланка бол ерөнхийлөгчийн засаглалтай ардчилсан бүгд найрамдах
             улс юм. Шри Ланкийн Ерөнхийлөгч нь төрийн тэргүүн, засгийн газрын
             тэргүүн бөгөөд бүх нийтийн санал хураалтаар таван жилийн хугацаатай
             сонгогддог. Шри Ланкийн одоогийн Ерөнхийлөгч нь 2019 онд сонгогдсон
             Готабая Ражапакса юм.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/president.jpeg" />
+          <section>
+            <img src="../SriLanka/president.jpeg" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн парламент нь нэг танхимтай хууль тогтоох байгууллага
             бөгөөд 225 гишүүнээс бүрддэг бөгөөд таван жилийн хугацаатай
             ажиллахаар сонгогддог. УИХ бол хууль гаргах, Засгийн газрын үйл
             ажиллагаанд хяналт тавих үүрэгтэй.
           </section>
-          <section data-transition="convex">
+          <section>
             Сүүлийн жилүүдэд Шри-Ланка улс төрийн сорилттой тулгараад байгаа
             бөгөөд авлига, хүний эрхийг зөрчсөн, үндэстэн ястны зөрчилдөөн зэрэг
             асуудалтай тулгарч байна. Засгийн газар эдгээр асуудлыг шийдэж байна
             гэж шүүмжилж, ардчиллыг бэхжүүлэх, эдгээр сорилтыг шийдвэрлэхийн
             тулд шинэчлэл хийхийг уриалж байна.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/politis.jpeg" width="100%" />
+          <section>
+            <img src="../SriLanka/politis.jpeg" width="100%" />
           </section>
-          <section data-transition="convex">
+          <section>
             <h3>Мэдэхэд илүүдэхгүй</h3>
             <p>
               Шри Ланка улс төрийн олон намын тогтолцоотой бөгөөд хамгийн том
@@ -160,15 +168,14 @@
             </p>
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex" data-auto-animate>
+        <section data-transition="concave">
+          <section>
             <h1>Эдийн засаг</h1>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Эдийн засаг</h1>
-            <img src="./SriLanka/economy.jpeg" width="60%" />
+          <section>
+            <img src="../SriLanka/economy.jpeg" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри-Ланкийн эдийн засаг нь хөдөө аж ахуй, аялал жуулчлал,
             үйлдвэрлэлийн салбарууд дээр тулгуурладаг. Тус улс нь экспортын гол
             бүтээгдэхүүн болох цай, резин, кокосын үйлдвэрлэлээрээ алдартай.
@@ -176,7 +183,7 @@
             нэмэр оруулж буй мэдээллийн технологи, үйлчилгээний салбарыг
             хөгжүүлж байна.
           </section>
-          <section data-transition="convex">
+          <section>
             Улсын өндөр өр, худалдааны алдагдал зэрэг сорилтуудтай тулгарч
             байсан ч Шри Ланкад сүүлийн арван жилд эдийн засгийн тогтвортой
             өсөлт ажиглагдаж байна. Хөрөнгө оруулалтын томоохон бүс болох
@@ -184,22 +191,21 @@
             оруулалтыг нэмэгдүүлэх, дэд бүтцийг сайжруулах эдийн засгийн
             шинэчлэлийг тус улс хэрэгжүүлсэн.
           </section>
-          <section data-transition="convex">
+          <section>
             <h3>Мэдэхэд илүүдэхгүй</h3>
             2020 онд Шри Ланкийн ДНБ 84 тэрбум доллар, нэг хүнд ногдох ДНБ 4000
             орчим ам.доллар байхаар тооцоолсон. Тус улсын худалдааны гол түншүүд
             нь Энэтхэг, Хятад, АНУ юм
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex" data-auto-animate>
+        <section data-transition="concave">
+          <section>
             <h1>Хэл</h1>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Хэл</h1>
-            <img src="./SriLanka/language.png" width="80%" />
+          <section>
+            <img src="../SriLanka/language.png" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланка нь Сингал, Тамил гэсэн хоёр албан ёсны хэлтэй. Сингал
             хэлээр хүн амын дийлэнх нь Сингал хэлээр ярьдаг бол Тамил хэлээр
             цөөнх нь ярьдаг. Мөн англи хэлийг албан ёсны зорилгоор, ялангуяа
@@ -208,30 +214,29 @@
             ярьдаг.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex" data-auto-animate>
+        <section data-transition="concave">
+          <section>
             <h1>Соёл</h1>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Соёл</h1>
-            <img src="./SriLanka/culture.jpeg" width="70%" />
+          <section>
+            <img src="../SriLanka/culture.jpeg" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри-Ланка нь олон жилийн түүх, бусад соёлтой харьцахдаа бий болсон
             баялаг, олон янзын соёлтой. Шри-Ланкчуудын дийлэнх нь Сингалчууд
             боловч Тамил, Мусульман, Бургер зэрэг олон хүн амтай бөгөөд тус бүр
             өөрийн гэсэн өвөрмөц соёлын уламжлалтай.
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн соёлын хамгийн чухал талуудын нэг нь тус арал дээр 2000
             гаруй жилийн турш шүтлэгдэн ирсэн Буддизм юм. Тус улсын соёлын олон
             уламжлал, зан заншил нь баяр наадам, урлаг, хөгжим, бүжиг зэрэг
             Буддын шашинтай холбоотой байдаг.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/culture2.jpeg" />
+          <section>
+            <img src="../SriLanka/culture2.jpeg" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн уламжлалт бүжиг, хөгжим нь мөн түүний соёлын онцлог шинж
             чанарууд юм. Төвийн өндөрлөг газраас үүссэн Кандиан бүжиг нь шашны
             зан үйл, баяр ёслолын үеэр ихэвчлэн тоглодог алдартай бүжгийн төрөл
@@ -239,21 +244,21 @@
             соёлын чухал хэсэг юм.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex">
+        <section data-transition="concave">
+          <section>
             <h1>Дотоодын нийт бүтээгдэхүүн</h1>
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн ДНБ 2020 онд ойролцоогоор 84 тэрбум доллар, нэг хүнд
             ногдох ДНБ 4000 орчим ам.доллар байхаар тооцоолсон. Тус улсын эдийн
             засаг сүүлийн хэдэн жилд тогтвортой өсөлттэй байгаа хэдий ч өндөр
             инфляци, улсын өрийн өндөр, гадаад худалдааны их хэмжээний алдагдал
             зэрэг зарим сорилтуудтай тулгарсан.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/db.png" width="100%" />
+          <section>
+            <img src="../SriLanka/db.png" width="100%" />
           </section>
-          <section data-transition="convex">
+          <section>
             Үйлчилгээний салбар нь тус улсын ДНБ-д хамгийн их хувь нэмэр
             оруулдаг салбар, дараа нь аж үйлдвэр, хөдөө аж ахуй. Шри Ланкийн
             экспортын гол бүтээгдэхүүнд нэхмэл болон хувцас, цай, резин, кокосын
@@ -263,11 +268,11 @@
             үзүүлэх зэрэг олон төрлийн шинэчлэлийг хэрэгжүүлсэн.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex">
+        <section data-transition="concave">
+          <section>
             <h1>Тээвэр</h1>
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкад нийтийн тээврийг ихэвчлэн автобус, галт тэргээр хангадаг.
             Автобус бол орон нутгийн иргэдийн хамгийн түгээмэл тээврийн хэрэгсэл
             бөгөөд хувийн болон засгийн газрын олон автобус үйлчилгээ үзүүлдэг.
@@ -275,10 +280,10 @@
             хүртэлх галт тэрэгний аялал гэх мэт үзэсгэлэнт галт тэрэгний аялал
             жуулчдын сонирхлыг татдаг.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/transport.jpeg" width="100%" />
+          <section>
+            <img src="../SriLanka/transport.jpeg" width="100%" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкад авто зам, төмөр замаас гадна хэд хэдэн нисэх онгоцны
             буудал, боомт бий. Олон улсын гол нисэх онгоцны буудал нь Коломбо
             дахь Бандаранаике олон улсын нисэх онгоцны буудал бөгөөд дотоодын
@@ -287,15 +292,14 @@
             эдийн засагт чухал үүрэг гүйцэтгэдэг.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex" data-auto-animate>
+        <section data-transition="concave">
+          <section>
             <h1>Валют</h1>
           </section>
-          <section data-transition="convex" data-auto-animate>
-            <h1>Валют</h1>
-            <img src="./SriLanka/currency.jpeg" width="70%" />
+          <section>
+            <img src="../SriLanka/currency.jpeg" width="100%" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн мөнгөн тэмдэгт нь Шри Ланкийн рупи (LKR) юм. Нэг рупи нь
             100 центэд хуваагдана. Гүйлгээнд байгаа бэлэн мөнгө нь 10, 20, 50,
             100, 500, 1000, 2000, 5000 рупигийн мөнгөн тэмдэгт юм. Шри Ланкийн
@@ -304,11 +308,11 @@
             200 LKR орчим байна.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex">
+        <section data-transition="concave">
+          <section>
             <h1>Эрчим хүч</h1>
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн эрчим хүчний үндсэн эх үүсвэр нь усан цахилгаан эрчим
             хүч, дулааны эрчим хүч, сэргээгдэх эрчим хүч юм. 2021 оны байдлаар
             тус улс нийт 4000 орчим МВт суурилагдсан хүчин чадалтай. Шри Ланкад
@@ -318,10 +322,10 @@
             ашигладаг дулааны цахилгаан станцууд нийт цахилгаан эрчим хүчний 60
             орчим хувийг үйлдвэрлэдэг.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/energy.png" width="100%" />
+          <section>
+            <img src="../SriLanka/energy.png" width="100%" />
           </section>
-          <section data-transition="convex">
+          <section>
             Сүүлийн жилүүдэд Шри-Ланкийн засгийн газар салхин эрчим хүч, нарны
             эрчим хүч гэх мэт сэргээгдэх эрчим хүчний эх үүсвэрийг ашиглахыг
             дэмжиж, тус улсын чулуужсан түлшний хараат байдлыг бууруулж байна.
@@ -329,34 +333,34 @@
             эх үүсвэрээс хангах зорилт тавин ажиллаж байна.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex">
+        <section data-transition="concave">
+          <section>
             <h1>Уур амьсгал</h1>
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланка нь муссоны хоёр улиралтай халуун орны уур амьсгалтай.
             Баруун өмнөд муссон 5-р сараас 9-р сар хүртэл бороо оруулдаг бол
             зүүн хойд муссон 12-р сараас 2-р сар хүртэл бороо оруулдаг. Жилийн
             үлдсэн хэсэг нь ихэвчлэн хуурай байдаг.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/climate.png" />
+          <section>
+            <img src="../SriLanka/climate.png" />
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн дундаж температур ойролцоогоор 27 ° C (81 ° F) бөгөөд
             далайн эрэг орчмын бүсүүд бага зэрэг дулаан, өндөрлөг газар сэрүүн
             байдаг. Тус улс мөн борооны улирал, ялангуяа борооны улиралд үер,
             хөрсний гулгалт зэрэг байгалийн гамшигт өртөмтгий байдаг.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/climate2.jpeg" width="100%" />
+          <section>
+            <img src="../SriLanka/climate2.jpeg" width="100%" />
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex">
+        <section data-transition="concave">
+          <section>
             <h1>Даяаршил</h1>
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланка нь дэлхийн эдийн засагтай, ялангуяа 1970-аад оны сүүлчээр
             эдийн засгаа либералчлагдсанаас хойш интеграцчилж байна. Тус улс
             аялал жуулчлал, үйлдвэрлэл, үйлчилгээ зэрэг эдийн засгийн янз бүрийн
@@ -364,10 +368,10 @@
             Сүүлийн жилүүдэд Шри Ланка Хятад, Энэтхэг, Сингапур зэрэг орнуудтай
             чөлөөт худалдааны хэд хэдэн гэрээ байгуулсан.
           </section>
-          <section data-transition="convex">
-            <img src="./SriLanka/global.jpeg" />
+          <section>
+            <img src="../SriLanka/global.jpeg" />
           </section>
-          <section data-transition="convex">
+          <section>
             Тус улс мөн 1995 оноос хойш Дэлхийн Худалдааны Байгууллага (ДХБ)-ын
             гишүүнээр элссэн боловч Шри Ланк улс дэлхийн эдийн засагтай
             интеграцчлахад улс төрийн тогтворгүй байдал, авлига, дэд бүтцийн
@@ -377,8 +381,8 @@
             нэмэгдүүлэхийн тулд засгийн газар хүчин чармайлт гаргаж байна.
           </section>
         </section>
-        <section data-transition="convex">
-          <section data-transition="convex">
+        <section data-transition="concave">
+          <section>
             Дүгнэж хэлэхэд, Шри Ланка бол Өмнөд Азид оршдог, баялаг түүх, соёл,
             байгалийн үзэсгэлэнт сайхан арлын улс юм. Улс төрийн тогтворгүй
             байдал, байгалийн гамшиг зэрэг янз бүрийн сорилтуудтай тулгарсан ч
@@ -387,7 +391,7 @@
             улс нь аялал жуулчлал, хөдөө аж ахуй, нэхмэл эдлэл зэрэг олон
             төрлийн үйлдвэрүүдтэй.
           </section>
-          <section data-transition="convex">
+          <section>
             Шри Ланкийн ард түмэн сингал, тамил зэрэг олон хэлээр ярьдаг бөгөөд
             тэдний хөгжим, бүжиг, наадамд тусгагдсан баялаг, эрч хүчтэй соёлтой.
             Тус улсын стратегийн байршил нь олон улсын худалдааны чухал төв
@@ -400,27 +404,52 @@
         </section>
       </div>
     </div>
-
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/search/search.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        plugins: [
-          RevealZoom,
-          RevealNotes,
-          RevealSearch,
-          RevealMarkdown,
-          RevealHighlight,
-        ],
-      })
-    </script>
   </body>
+
+  <script src="../dist/reveal.js"></script>
+  <script src="../plugin/zoom/zoom.js"></script>
+  <script src="../plugin/notes/notes.js"></script>
+  <script src="../plugin/search/search.js"></script>
+  <script src="../plugin/markdown/markdown.js"></script>
+  <script src="../plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      plugins: [
+        RevealZoom,
+        RevealNotes,
+        RevealSearch,
+        RevealMarkdown,
+        RevealHighlight,
+      ],
+    })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const loadEl = document.querySelector("#load")
+
+      try {
+        let app = firebase.app()
+        let features = [
+          "auth",
+          "database",
+          "firestore",
+          "functions",
+          "messaging",
+          "storage",
+          "analytics",
+          "remoteConfig",
+          "performance",
+        ].filter((feature) => typeof app[feature] === "function")
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(", ")}`
+      } catch (e) {
+        console.error(e)
+        loadEl.textContent =
+          "Error loading the Firebase SDK, check the console."
+      }
+    })
+  </script>
 </html>
